@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="color-theme" content="">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-top__inner">
+              <nav class="menu"><a class="menu__item" href="#">О нашей компании</a><a class="menu__item" href="#">Выбрать отель</a><a class="menu__item" href="#">Инвестировать в отель</a><a class="menu__item" href="#">Присоединить отель
+                  <svg class="svg-sprite-icon  icon-plus menu__item-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#plus"></use>
+                  </svg></a></nav>
+            </div>
+          </div>
+        </div>
+        <div class="header-body" style="background-image: url('static/images/img/bgsvg.svg')">
+          <div class="container">
+            <div class="header-body__inner">
+              <h1 class="header-title">Забронируйте уникальное жилье быстро и просто</h1>
+              <div class="header-text">Лучший способ арендовать квартиру</div>
+            </div>
+            <div class="search">
+              <form class="form travel">
+                <div class="travel__item">  
+                  <input class="travel__input" type="text" id="otel" placeholder="Отель">
+                  <label for="otel"></label>
+                  <svg class="svg-sprite-icon  icon-map-pin travel__item-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#map-pin"></use>
+                  </svg>
+                  <svg class="svg-sprite-icon  icon-navigation travel__item-icon right">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#navigation"></use>
+                  </svg>
+                  <div class="travel__hotel">
+                    <div class="hotel">
+                      <div class="hotel__check"><span class="hotel__check-all checked__active">все</span>
+                        <input class="tgl tgl-light" type="checkbox" name="hotel" id="check">
+                        <label class="tgl-btn" for="check"></label><span class="hotel__check-sale">акции</span>
+                      </div>
+                      <div class="hotel__list hotel__list_all scrollbar">
+                        <div class="hotel__item">Название Отеля 1</div>
+                        <div class="hotel__item">Название Отеля 2</div>
+                        <div class="hotel__item">Название Отеля 3</div>
+                        <div class="hotel__item">Название Отеля 4</div>
+                        <div class="hotel__item">Название Отеля 5</div>
+                        <div class="hotel__item">Название Отеля 6</div>
+                        <div class="hotel__item">Название Отеля 7</div>
+                        <div class="hotel__item">Название Отеля 8</div>
+                      </div>
+                      <div class="hotel__list hotel__list_sale scrollbar">
+                        <div class="hotel__item">Низкая цена Отеля 1</div>
+                        <div class="hotel__item">Низкая цена Отеля 2</div>
+                        <div class="hotel__item">Низкая цена Отеля 3</div>
+                        <div class="hotel__item">Низкая цена Отеля 4</div>
+                        <div class="hotel__item">Низкая цена Отеля 5</div>
+                        <div class="hotel__item">Низкая цена Отеля 6</div>
+                        <div class="hotel__item">Низкая цена Отеля 7</div>
+                        <div class="hotel__item">Низкая цена Отеля 8</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="travel__item">  
+                  <input class="travel__input" type="text" id="dates" placeholder="Заезд - Отъезд">
+                  <label for="dates"></label>
+                  <svg class="svg-sprite-icon  icon-calendar travel__item-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#calendar"></use>
+                  </svg>
+                </div>
+                <div class="travel__item">  
+                  <input class="travel__input" type="text" id="room" placeholder="2 взрослых - один номер">
+                  <label for="room"></label>
+                  <svg class="svg-sprite-icon  icon-user-plus travel__item-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#user-plus"></use>
+                  </svg>
+                  <div class="travel__guests">
+                    <div class="guests">
+                      <div class="guests__item">
+                        <div class="guests__text">Номера</div>
+                        <div class="counter">
+                          <div class="counter__max"></div>
+                          <div class="count">0</div><span>+</span>
+                          <div class="counter__min"></div>
+                        </div>
+                      </div>
+                      <div class="guests__item">
+                        <div class="guests__text">Взрослых</div>
+                        <div class="counter">
+                          <div class="counter__max"></div>
+                          <div class="count">0</div><span>+</span>
+                          <div class="counter__min"></div>
+                        </div>
+                      </div>
+                      <div class="guests__item">
+                        <div class="guests__text">Детей</div>
+                        <div class="counter">
+                          <div class="counter__max"></div>
+                          <div class="count">0</div><span>+</span>
+                          <div class="counter__min"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn travel_btn searchBtn" type="submit">Начать поиск</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
